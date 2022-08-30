@@ -2,9 +2,10 @@ let args=process.argv;
 //console.log(typeof(args))
 const newArray=Array.from(args.slice(2))
 console.log(newArray);
-let numbers = [5, 13, 1, 44, 32, 15, 500]
-let lowestToHighest = newArray.sort((a, b) => a - b);
-//console.log(lowestToHighest );
+
+let orderArray= newArray.sort((a, b) => a - b);
+
+console.log(orderArray);
 const functionTimer= (array)=>{
     for(let i=0;i<array.length;i++){
     let numberArray=Number(array[i])
@@ -15,4 +16,4 @@ const functionTimer= (array)=>{
     },numberArray*1000);
     
 }};
-functionTimer(lowestToHighest )
+functionTimer(orderArray)
